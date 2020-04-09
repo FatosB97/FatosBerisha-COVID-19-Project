@@ -14,7 +14,7 @@ Corona Virus Infection Management System(Programming II Project)
 	the objects in a file in a binary format. At the beginning these files are called using the function getDataFromFile() 
 	in the CovidManagementSystem class. If no file with the name given as a parameter for this file exists then this file creates 	one and then reads from it. The lists self.hospitals, quarantines, allEmployees and allPatients use this function to get the data.
 
-- [Heading](## getHospitals())
+- [Heading](##getHospitals())
 
 ######
 Functions in CovidManagementSystem.py
