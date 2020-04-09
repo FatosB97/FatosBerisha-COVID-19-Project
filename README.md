@@ -103,8 +103,8 @@ Related to staff
 	##gets all employees in the system
 
 
-#Quarantines
-	###
+# Quarantines
+
 ### getQuarantines()
 	##gets all the quarantines from the list self.quarantines
 
