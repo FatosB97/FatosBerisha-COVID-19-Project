@@ -120,11 +120,11 @@ gets all the quarantines from the list self.quarantines
 
 
 ## addQuarantine(name, capacity)
-	##creates a new quarantine with the given parameters
+creates a new quarantine with the given parameters
 
-###deleteQuarantine(quarId)
-	##deletes the quarantine with the id quarId
-	It finds the given quarantine, if it exists than it's patients are saved in the variable patientsOfQuar, and the number of patients.
+## deleteQuarantine(quarId)
+deletes the quarantine with the id quarId
+It finds the given quarantine, if it exists than it's patients are saved in the variable patientsOfQuar, and the number of patients.
 	If the number of patients is zero than the quarantine is simply deleted.
 	If not then that means that the patients of the quarantine first need to be transfered to another quarantine before being deleted.
 	If the quarantine has patients:
@@ -146,14 +146,14 @@ If none of the conditions inside the for loop were met than that means that the 
 
 
 ## capacityLeftOfAllQuaranatines()
-	gets the joint capacityLeft of all quarantines
+gets the joint capacityLeft of all quarantines
 
 
 
 # stats
 
 ## systemStats()
-	##calculates the number and percentage of the infected patients, gets the status and id-s of all facilities, and the status and ID-s of all patients
+calculates the number and percentage of the infected patients, gets the status and id-s of all facilities, and the status and ID-s of all patients
 
 
 # both facilities
