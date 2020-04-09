@@ -1,18 +1,18 @@
 # FatosBerisha-COVID-19-Project
 Corona Virus Infection Management System(Programming II Project)
 
-	Documentation of Corona Virus Project
+##Documentation of Corona Virus Project
 
-	There are 5 different classes:CovidAPI.py, CovidManagementSystem.py, Hospital.py, Quarantine.py, Staff.py and Patient.py.
+There are 5 different classes:CovidAPI.py, CovidManagementSystem.py, Hospital.py, Quarantine.py, Staff.py and Patient.py.
 
-	In the Hospital.py are created new hospitals which each have an id, a name, capacity, a list of patients and staff.
-	These ID all start with an identifier string ("hos-....") to distinguish between hospitals and quarantines.
-	The same is for quarantines except the quarantine's id starts with quar-.
+In the Hospital.py are created new hospitals which each have an id, a name, capacity, a list of patients and staff.
+These ID all start with an identifier string ("hos-....") to distinguish between hospitals and quarantines.
+The same is for quarantines except the quarantine's id starts with quar-.
 
 
-	This API saves and retrieves data with the help of the package called pickle which saves the instances of classes or 
-	the objects in a file in a binary format. At the beginning these files are called using the function [getDataFromFile(File)](#getdatafromfilefile) 
-	in the CovidManagementSystem class. If no file with the name given as a parameter for this file exists then this file creates 	one and then reads from it. The lists self.hospitals, quarantines, allEmployees and allPatients use this function to get the data.
+This API saves and retrieves data with the help of the package called pickle which saves the instances of classes or 
+the objects in a file in a binary format. At the beginning these files are called using the function [getDataFromFile(File)](#getdatafromfilefile) 
+in the CovidManagementSystem class. If no file with the name given as a parameter for this file exists then this file creates one and then reads from it. The lists self.hospitals, quarantines, allEmployees and allPatients use this function to get the data.
 	
 ## List of all functions:
 - [Hospital](#hospital)
