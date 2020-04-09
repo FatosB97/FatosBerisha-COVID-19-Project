@@ -1,7 +1,7 @@
 # FatosBerisha-COVID-19-Project
-Corona Virus Infection Management System(Programming II Project)
+## Corona Virus Infection Management System(Programming II Project)
 
-##Documentation of Corona Virus Project
+## Documentation of Corona Virus Project
 
 There are 5 different classes:CovidAPI.py, CovidManagementSystem.py, Hospital.py, Quarantine.py, Staff.py and Patient.py.
 
