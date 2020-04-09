@@ -11,8 +11,9 @@ Corona Virus Infection Management System(Programming II Project)
 
 
 	This API saves and retrieves data with the help of the package called pickle which saves the instances of classes or 
-	the objects in a file in a binary format. At the beginning these files are called using the function getDataFromFile() 
+	the objects in a file in a binary format. At the beginning these files are called using the function [getDataFromFile(File)](#getdatafromfilefile) 
 	in the CovidManagementSystem class. If no file with the name given as a parameter for this file exists then this file creates 	one and then reads from it. The lists self.hospitals, quarantines, allEmployees and allPatients use this function to get the data.
+	
 ## List of all functions:
 - [Hospital](#hospital)
   * [getHospitals()](#gethospitals)
@@ -21,11 +22,11 @@ Corona Virus Infection Management System(Programming II Project)
   * [getQuarantines()](#getquarantines)
   * [addQuarantine(name,capacity)](#addquarantinename-capacity)
   * [deleteQuarantine(quarId)](#deletequarantinequarid)
-  * [capacityLeftOfAllQuarantines()](#capacityleftofallquarantines)
 - [Both Facilities](#both-facilities)
   * [getAllFacilities()](#getallfacilities)
   * [getFacilitiyById(id_)](#getfacilitybyidid_)
-  * [deleteFacility(id_)](#deletefacilitiyid_) 
+  * [deleteFacility(id_)](#deletefacilitiyid_)
+  * [totalCapacityLeftOfAllFacilities(facilityType)](#totalcapacityleftofallfacilitiesfacilitytype)
 -[Patient](#patient)
   * [getPatient(patId_, facility)](#getpatientpatId_-facility)
   * [createNewPatient(name, dob)](#createnewpatientname-dob)
@@ -122,7 +123,7 @@ and the data to be saved there will be taken from the list that is in the variab
 
 
 
-Related to staff
+#### Related to staff
 ### saveToFile(objFile, theObject, saveToSecondFile=None, theSecondObject=None)
 This function will save data to the given file(objFile), and those data will be collected from the given list(theObject). 
 If it's needed than two different files and two different lists can be used by giving also the saveToSecondFile and theSecondObject.
@@ -167,7 +168,7 @@ It finds the given quarantine, if it exists than it's patients are saved in the 
 		And then store the patients and clear the patients list inside the quarToDelete and then call the function again recursively. And when the function starts again now the condition "if (numOfPatients == 0)" is fulfilled which means the quarantine can be safely deleted by using the function self.deleteFacility()
 
 But if the current quarantine can't store all the patients then the next will be checked.
-By using the fucntion totalCapacityLeftInFacilities() will be able to know if there is enough joint capacity in the other quarantines.
+By using the function [totalCapacityLeftInFacilities](#totalcapacityleftinfacilitiesfacilitytype) will be able to know if there is enough joint capacity in the other quarantines.
 	If there is:
 		Then the function stores as many patients inside the current quarantine as the quarantine allows and delete the same patients that were transfered from the list patientsOfQuar.
 		And then the function is called recursively to check if all patients were transfered, if not go again into the for loop and repeat the same steps
@@ -177,8 +178,7 @@ If none of the conditions inside the for loop were met than that means that the 
 
 
 
-### capacityLeftOfAllQuaranatines()
-gets the joint capacityLeft of all quarantines
+
 
 
 
@@ -205,7 +205,8 @@ deletes the facility with id_
 if the facility with that id exists first changes the patients attribute called 'monitoredIn' to null since those patients will still show up in the allPatients list even after deletion of their facility.
 
 
-
+### totalCapacityLeftOfAllFacilities(facilityType)
+gets the joint capacityLeft of the given facility type(Quarantines or Hospitals)
 
 
 # Saving and retrieving data
