@@ -25,8 +25,7 @@ Table of Content:
 - [Both Facilities](#both-facilities)
   * [getAllFacilities()](#getallfacilities)
   * [getFacilitiyById(id_)](#getfacilitybyidid_)
-  * [deleteFacility(id_)](#deletefacilitiyid_)
-  
+  * [deleteFacility(id_)](#deletefacilitiyid_) 
 -[Patient](#patient)
   * [getPatient(patId_, facility)](#getpatientpatId_-facility)
   * [createNewPatient(name, dob)](#createnewpatientname-dob)
@@ -35,20 +34,17 @@ Table of Content:
   * [transferPatientToAnyQuarantine(pat_id, facilityTypeToTransfer)](#transferpatienttoanyquarantinepat_id-facilitytypetotransfer)
   * [cure(pat_id)](#curepat_id)
   * [admitPatientF(fac_id, pat_id)](#admitpatientffac_id-pat_id)
-  
 - [Staff](#staff)
   * [addStaff()](#addstaff)
   * [getEmployee(employeeId, theList)](#getemployeeemployeeid-thelist)
   * [deleteEmployee(employeeId)](#deleteemployeeemployeeid)
   * [assignEmployee(employeeId, facilityId)](#assignemployeeemployeeid-facilityid)
   * [getAllEmployees()](#getallemployees)
-  
 - [Stats](#stats)
   * [systemStats()](#systemstats)
-  
 -[Saving and retrieving data](#saving-and-retrieving-data)
  * [getDataFromFile(File)](#getdatafromfilefile)
- * [saveToFile(objFile, theObject, saveToSecondFile=None, theSecondObject=None)](#savetofileobjfile-theobject-savetosecondfile=none-thesecondobject=none)
+ * [saveToFile(objFile, theObject, saveToSecondFile=None, theSecondObject=None)](#savetofileobjfile-theobject-savetosecondfilenone-thesecondobjectnone)
   
   
 	
