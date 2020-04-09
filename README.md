@@ -15,9 +15,10 @@ Corona Virus Infection Management System(Programming II Project)
 	in the CovidManagementSystem class. If no file with the name given as a parameter for this file exists then this file creates 	one and then reads from it. The lists self.hospitals, quarantines, allEmployees and allPatients use this function to get the data.
 Table of Content:
 - [Hospital](#hospital)
-  * [Functions]
-    +[getHospitals()](#gethospitals)
-
+  * [getHospitals()](#gethospitals)
+  * [addHospital()](#addhospital)
+- [Quarantine](#quarantine)
+	
 ######
 Functions in CovidManagementSystem.py
 
