@@ -22,14 +22,35 @@ Table of Content:
   * [addQuarantine(name,capacity)](#addquarantinename-capacity)
   * [deleteQuarantine(quarId)](#deletequarantinequarid)
   * [capacityLeftOfAllQuarantines()](#capacityleftofallquarantines)
+- [Both Facilities](#both-facilities)
+  * [getAllFacilities()](#getallfacilities)
+  * [getFacilitiyById(id_)](#getfacilitybyidid_)
+  * [deleteFacility(id_)](#deletefacilitiyid_)
+  
 -[Patient](#patient)
+  * [getPatient(patId_, facility)](#getpatientpatId_-facility)
   * [createNewPatient(name, dob)](#createnewpatientname-dob)
   * [discharge(pat_id, facility_id)](#dischargepat_id-facility_id)
-  * [getHospitals()](#gethospitals)
-  * [getHospitals()](#gethospitals)
-  * [getHospitals()](#gethospitals)
-  * [getHospitals()](#gethospitals)
-  * [getHospitals()](#gethospitals)
+  * [diagnose(pat_id)](#diagnosepat_id)
+  * [transferPatientToAnyQuarantine(pat_id, facilityTypeToTransfer)](#transferpatienttoanyquarantinepat_id-facilitytypetotransfer)
+  * [cure(pat_id)](#curepat_id)
+  * [admitPatientF(fac_id, pat_id)](#admitpatientffac_id-pat_id)
+  
+- [Staff](#staff)
+  * [addStaff()](#addstaff)
+  * [getEmployee(employeeId, theList)](#getemployeeemployeeid-thelist)
+  * [deleteEmployee(employeeId)](#deleteemployeeemployeeid)
+  * [assignEmployee(employeeId, facilityId)](#assignemployeeemployeeid-facilityid)
+  * [getAllEmployees()](#getallemployees)
+  
+- [Stats](#stats)
+  * [systemStats()](#systemstats)
+  
+-[Saving and retrieving data](#saving-and-retrieving-data)
+ * [getDataFromFile(File)](#getdatafromfilefile)
+ * [saveToFile(objFile, theObject, saveToSecondFile=None, theSecondObject=None)](#savetofileobjfile-theobject-savetosecondfile=none-thesecondobject=none)
+  
+  
 	
 ######
 Functions in CovidManagementSystem.py
