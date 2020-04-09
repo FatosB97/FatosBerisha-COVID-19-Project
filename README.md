@@ -168,7 +168,7 @@ It finds the given quarantine, if it exists than it's patients are saved in the 
 		And then store the patients and clear the patients list inside the quarToDelete and then call the function again recursively. And when the function starts again now the condition "if (numOfPatients == 0)" is fulfilled which means the quarantine can be safely deleted by using the function self.deleteFacility()
 
 But if the current quarantine can't store all the patients then the next will be checked.
-By using the function [totalCapacityLeftInFacilities](#totalcapacityleftinfacilitiesfacilitytype) will be able to know if there is enough joint capacity in the other quarantines.
+By using the function [totalCapacityLeftInAllFacilities](#totalcapacityleftinallfacilitiesfacilitytype) will be able to know if there is enough joint capacity in the other quarantines.
 	If there is:
 		Then the function stores as many patients inside the current quarantine as the quarantine allows and delete the same patients that were transfered from the list patientsOfQuar.
 		And then the function is called recursively to check if all patients were transfered, if not go again into the for loop and repeat the same steps
