@@ -27,7 +27,7 @@ in the CovidManagementSystem class. If no file with the name given as a paramete
   * [getFacilitiyById(id_)](#getfacilitybyidid_)
   * [deleteFacility(id_)](#deletefacilitiyid_)
   * [totalCapacityLeftOfAllFacilities(facilityType)](#totalcapacityleftofallfacilitiesfacilitytype)
--[Patient](#patient)
+- [Patient](#patient)
   * [getPatient(patId_, facility)](#getpatientpatId_-facility)
   * [createNewPatient(name, dob)](#createnewpatientname-dob)
   * [discharge(pat_id, facility_id)](#dischargepat_id-facility_id)
@@ -43,9 +43,9 @@ in the CovidManagementSystem class. If no file with the name given as a paramete
   * [getAllEmployees()](#getallemployees)
 - [Stats](#stats)
   * [systemStats()](#systemstats)
--[Saving and retrieving data](#saving-and-retrieving-data)
- * [getDataFromFile(File)](#getdatafromfilefile)
- * [saveToFile(objFile, theObject, saveToSecondFile=None, theSecondObject=None)](#savetofileobjfile-theobject-savetosecondfilenone-thesecondobjectnone)
+- [Saving and retrieving data](#saving-and-retrieving-data)
+  * [getDataFromFile(File)](#getdatafromfilefile)
+  * [saveToFile(objFile, theObject, saveToSecondFile=None, theSecondObject=None)](#savetofileobjfile-theobject-savetosecondfilenone-thesecondobjectnone)
   
   
 	
