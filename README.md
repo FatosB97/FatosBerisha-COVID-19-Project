@@ -18,6 +18,10 @@ Table of Content:
   * [getHospitals()](#gethospitals)
   * [addHospital()](#addhospital)
 - [Quarantine](#quarantine)
+  * [getQuarantines()](#getquarantines)
+  * [addQuarantine(name,capacity)](#addquarantinenamecapacity)
+  * [getHospitals()](#gethospitals)
+  * [getHospitals()](#gethospitals)
 	
 ######
 Functions in CovidManagementSystem.py
@@ -116,7 +120,7 @@ creates a new employee with the given name, dob and position(either a doctor or 
 gets all employees in the system
 
 
-# Quarantines
+# Quarantine
 
 ### getQuarantines()
 gets all the quarantines from the list self.quarantines
