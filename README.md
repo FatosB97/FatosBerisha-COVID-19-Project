@@ -13,8 +13,10 @@ Corona Virus Infection Management System(Programming II Project)
 	This API saves and retrieves data with the help of the package called pickle which saves the instances of classes or 
 	the objects in a file in a binary format. At the beginning these files are called using the function getDataFromFile() 
 	in the CovidManagementSystem class. If no file with the name given as a parameter for this file exists then this file creates 	one and then reads from it. The lists self.hospitals, quarantines, allEmployees and allPatients use this function to get the data.
-
-- [Heading](#getallemployees)
+Table of Content:
+- [Hospital](#hospital)
+  * [Functions]
+    +[getHospitals()](#gethospitals)
 
 ######
 Functions in CovidManagementSystem.py
