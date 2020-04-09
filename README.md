@@ -13,7 +13,7 @@ Corona Virus Infection Management System(Programming II Project)
 	This API saves and retrieves data with the help of the package called pickle which saves the instances of classes or 
 	the objects in a file in a binary format. At the beginning these files are called using the function getDataFromFile() 
 	in the CovidManagementSystem class. If no file with the name given as a parameter for this file exists then this file creates 	one and then reads from it. The lists self.hospitals, quarantines, allEmployees and allPatients use this function to get the data.
-Table of Content:
+##List of all functions:
 - [Hospital](#hospital)
   * [getHospitals()](#gethospitals)
   * [addHospital()](#addhospital)
@@ -78,7 +78,7 @@ first checks if the facility with the given id exists and then checks if the pat
 
 ### diagnose(pat_id)
 finds the patient with the id(pat_id) in the list of allPatients, then simulates a test and by using the random number generator it can simulate a result, 90% of being negative to coronavirus and 10 of being positive. 
-In case it is negative the patient will be discharged with the help of the previous discussed function( discharge() ).
+In case it is negative the patient will be discharged with the help of the previous discussed function( -[discharge()](#discharge) ).
 If it is positive then the status is changed to infected and then the function transferPatientToAnyQuarantine is called.
 
 
